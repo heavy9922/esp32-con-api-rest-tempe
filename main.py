@@ -1,6 +1,6 @@
 from connection import Wifi
 
-def main():
+def wifi_con():
     wifi = Wifi()
     if wifi.conectaWifi("Jadapa", "MENESES03"):
 
@@ -14,5 +14,9 @@ def main():
         print("Imposible conectar")
         miRed.active(False)
 
+def main():
+    pass
+
 if __name__ == '__main__':
+    wifi_con()
     main()
